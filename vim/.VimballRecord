@@ -1,0 +1,3 @@
+xmledit-1.9.1.vba: call delete('/home/dwipal/.vim/ftplugin/xml.vim')|call delete('/home/dwipal/.vim/doc/xml-plugin.txt')
+zenburn.vba: call delete('/home/dwipal/.vim/colors/zenburn.vim')
+rainbow_parenthsis-4.0.vba: call delete('/home/dwipal/.vim/autoload/rainbow_parenthsis.vim')|call delete('/home/dwipal/.vim/doc/rainbow_parenthsis.txt')|call delete('/home/dwipal/.vim/plugin/rainbow_parenthsis.vim')|call delete('/home/dwipal/.vim/rainbow_parenthsis_options.vim')

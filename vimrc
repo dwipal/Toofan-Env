@@ -66,7 +66,7 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../../tags
 
 inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 
-"colorscheme dwipal
+" colorscheme dwipal
 colorscheme desert256
 
 
