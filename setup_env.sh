@@ -15,3 +15,5 @@ ln -s env/bash_aliases .bash_aliases
 ln -s env/vimrc .vimrc
 ln -s env/vim .vim
 
+echo "Linking pickv aliases (delete the file ~/.bash_overrides if you don't want them)"
+ln -s env/bash_overrides_pickv .bash_overrides
