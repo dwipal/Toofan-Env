@@ -50,6 +50,7 @@ let Tlist_Enable_Fold_Column = 0  " no fold column (only showing one file)
 
 " Show project on F9
 nmap <silent> <F9> <Plug>ToggleProject
+nmap <silent> <C-j> <Plug>ToggleProject
 
 " stuff for buffer tabs
 

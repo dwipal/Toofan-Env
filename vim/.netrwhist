@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/usr/share/terminfo'
 let g:netrw_dirhist_2='/usr/share/terminfo/c'
+let g:netrw_dirhist_3='/home/dwipal/.screen-profiles'
+let g:netrw_dirhist_4='/home/dwipal/.vim'
