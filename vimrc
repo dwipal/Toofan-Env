@@ -1,7 +1,7 @@
 " standard stuff (from http://phuzz.org/vimrc.html)
 
 set nocompatible    " use vim defaults
-set ls=2            " allways show status line
+" set ls=2            " allways show status line
 set tabstop=4       " numbers of spaces of tab character
 set shiftwidth=4    " numbers of spaces to (auto)indent
 set scrolloff=3     " keep 3 lines when scrolling
@@ -17,17 +17,17 @@ set ignorecase      " ignore case when searching
 set smartcase		" smart case
 set title           " show title in console title bar
 set ttyfast         " smoother changes
-"set ttyscroll=0        " turn off scrolling, didn't work well with PuTTY
-set modeline        " last lines in document sets vim mode
-set modelines=3     " number lines checked for modelines
-"set shortmess=atI   " Abbreviate messages
+" set ttyscroll=0        " turn off scrolling, didn't work well with PuTTY
+ set modeline        " last lines in document sets vim mode
+ set modelines=3     " number lines checked for modelines
+" set shortmess=atI   " Abbreviate messages
 set nostartofline   " don't jump to first character when paging
 set whichwrap=b,s,h,l,<,>,[,]   " move freely between files
 set autoindent     " always set autoindenting on
 set smartindent        " smart indent
 set cindent            " cindent
 syntax on
-"set number			" show line numbers
+" set number			" show line numbers
 
 
 
@@ -50,7 +50,7 @@ let Tlist_Enable_Fold_Column = 0  " no fold column (only showing one file)
 
 " Show project on F9
 nmap <silent> <F9> <Plug>ToggleProject
-nmap <silent> <C-j> <Plug>ToggleProject
+nmap <silent> <C-D> <Plug>ToggleProject
 
 " stuff for buffer tabs
 
@@ -71,16 +71,16 @@ inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 colorscheme desert256
 
 
-autocmd FileType python set 
+" autocmd FileType python set 
 
 
 
 
 " misc stuff / shortcutso
 " sort CSS properties
-nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
+" nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
 " reselect text that was just pasted
-nnoremap <leader>v V`]
+" nnoremap <leader>v V`]
 " open a split window and switch to it
-nnoremap <leader>w <C-w>v<C-w>l
+" nnoremap <leader>w <C-w>v<C-w>l
 
