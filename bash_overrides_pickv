@@ -5,3 +5,6 @@ alias pushdev='$BUILDTOP/scripts/push_to_dev.sh'
 alias pushlive='$BUILDTOP/scripts/push_to_live.sh'
 alias nr='bt; nohup ./run.sh&'
 
+
+
+alias pbt='cd ~; cd personal/pdev; source init.sh; cd ..' 
