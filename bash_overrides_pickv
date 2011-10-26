@@ -3,5 +3,6 @@ alias cdp='cd $BUILDTOP/pickvee/public'
 alias env='cd ~/dev/env/lib/python2.6/site-packages'
 alias pushdev='$BUILDTOP/scripts/push_to_dev.sh'
 alias pushlive='$BUILDTOP/scripts/push_to_live.sh'
-alias nr='bt; nohup ./run.sh&'
+alias cipushlive='git commit -a; $BUILDTOP/scripts/push_to_live.sh'
+alias nr='bt; nohup ./run.sh &> /tmp/pick.log &'
 

@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/usr/share/terminfo'
 let g:netrw_dirhist_2='/usr/share/terminfo/c'
 let g:netrw_dirhist_3='/home/dwipal/.screen-profiles'
 let g:netrw_dirhist_4='/home/dwipal/.vim'
+let g:netrw_dirhist_5='/home/pickvee/redmine/redmine-0.9.4/config/locales'
+let g:netrw_dirhist_6='/home/dwipal/Dropbox/Dwipal/dev/pickv.v3'
+let g:netrw_dirhist_7='/var/log/pssh'
