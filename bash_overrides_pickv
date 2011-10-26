@@ -5,4 +5,5 @@ alias pushdev='$BUILDTOP/scripts/push_to_dev.sh'
 alias pushlive='$BUILDTOP/scripts/push_to_live.sh'
 alias cipushlive='git commit -a; $BUILDTOP/scripts/push_to_live.sh'
 alias nr='bt; nohup ./run.sh &> /tmp/pick.log &'
-
+alias pbt='cd ~; cd personal/pdev; source init.sh; cd ..' 
+alias tps='tail -f $BUILDTOP/pickvserver.log'
