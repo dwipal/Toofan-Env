@@ -1,0 +1,11 @@
+have_header: checking for ruby.h... -------------------- yes
+
+"cc -E -I. -I/usr/lib/ruby/1.8/i486-linux -I.  -D_FILE_OFFSET_BITS=64  -fno-strict-aliasing -g -g -O2  -fPIC    conftest.c -o conftest.i"
+/usr/lib/ruby/1.8/mkmf.rb:266: warning: Insecure world writable dir /home/dwipal/dev/env/bin in PATH, mode 040777
+checked program was:
+/* begin */
+1: #include <ruby.h>
+/* end */
+
+--------------------
+

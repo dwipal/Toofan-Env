@@ -28,6 +28,8 @@ syntax on
 set nowrap
 " set number			" show line numbers
 
+set expandtab
+
 
 
 nnoremap <leader><space> :noh<cr>	" ,<space> clears search highlight
@@ -45,23 +47,14 @@ let g:ctags_statusline=1
 let generate_tags=1
 let g:ctags_revenerate=1
 
+" for multiple matches
+nnoremap <C-]> :execute 'tj' expand('<cword>')<CR>zv
+
 " taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
 let Tlist_Exit_OnlyWindow = 1     " exit if taglist is last window open
 let Tlist_Show_One_File = 1       " Only show tags for current buffer
 let Tlist_Enable_Fold_Column = 0  " no fold column (only showing one file)
-
-" Show project on F9
-nmap <silent> <F9> <Plug>ToggleProject
-" nmap <silent> <C-D> <Plug>ToggleProject 
-nmap <silent> <C-D> :Project<CR> /
-
-" let g:proj_flags = "LFcsS"
-let g:proj_window_width = 24
-let g:proj_window_increment = 0
-
-
-
 
 " stuff for buffer tabs
 
@@ -74,11 +67,16 @@ set laststatus=2
 :let g:buftabs_only_basename=1
 :let g:buftabs_active_highlight_group="Visual"
 :let g:buftabs_in_statusline=1
-map <silent> <C-\> :bn<cr>
 noremap <f1> :bprev<CR> 
 noremap <f2> :bnext<CR> 
 
+noremap <C-<> :bprev<CR> 
+noremap <C->> :bnext<CR> 
 
+noremap <C-x> :bd<CR>
+
+" file open stuff
+nnoremap <C-\>  :CommandT<CR>
 
 
 let g:FindFileIgnore = ['*.o', '*.pyc', '*/tmp/*', '*/data/*', '*/templates/*/*.py'] 
@@ -104,4 +102,6 @@ colorscheme desert256
 " nnoremap <leader>v V`]
 " open a split window and switch to it
 " nnoremap <leader>w <C-w>v<C-w>l
+
+:set wildignore+=*.o,*.obj,.git,*.pyc,data/*
 
