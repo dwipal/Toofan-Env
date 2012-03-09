@@ -93,8 +93,6 @@ colorscheme desert256
 " autocmd FileType python set 
 
 
-
-
 " misc stuff / shortcutso
 " sort CSS properties
 " nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
@@ -105,3 +103,4 @@ colorscheme desert256
 
 :set wildignore+=*.o,*.obj,.git,*.pyc,data/*
 
+:let CSApprox_verbose_level=0
