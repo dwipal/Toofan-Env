@@ -102,3 +102,7 @@ fi
 
 
 export EDITOR=vim
+
+export PATH=/opt/SenchaSDKTools-2.0.0-beta2:/var/lib/gems/1.8/bin:$PATH
+
+export SENCHA_SDK_TOOLS_2_0_0_BETA2="/opt/SenchaSDKTools-2.0.0-beta2"

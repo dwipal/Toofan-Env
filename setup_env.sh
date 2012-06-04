@@ -11,6 +11,7 @@ rm .vim
 echo "Linking to new ones..."
 
 ln -s env/bashrc .bashrc
+ln -s env/screenrc .screenrc
 ln -s env/bash_aliases .bash_aliases
 ln -s env/vimrc .vimrc
 ln -s env/vim .vim
