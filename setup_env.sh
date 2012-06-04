@@ -2,6 +2,13 @@
 
 cd ~
 
+if [ -f ~/.bashrc ]; then
+echo "~/.bashrc exists, delete it before continuing"
+exit
+fi;
+
+return
+
 echo "Removing existing files..."
 rm .bashrc
 rm .bash_aliases
