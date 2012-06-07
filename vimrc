@@ -110,3 +110,6 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
+:filetype plugin on
+
+let g:pydiction_location = '~/.vim/pydiction-1.2/complete-dict'
