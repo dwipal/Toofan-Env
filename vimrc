@@ -104,3 +104,5 @@ colorscheme desert256
 :set wildignore+=*.o,*.obj,.git,*.pyc,data/*
 
 :let CSApprox_verbose_level=0
+
+:filetype plugin on
