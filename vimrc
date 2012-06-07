@@ -104,3 +104,9 @@ colorscheme desert256
 :set wildignore+=*.o,*.obj,.git,*.pyc,data/*
 
 :let CSApprox_verbose_level=0
+
+" Paste toggle (so that external paste works without screwing up indentendation)
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
