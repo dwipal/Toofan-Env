@@ -13,7 +13,7 @@ set nobackup        " do not keep a backup file
 
 set ignorecase      " ignore case when searching
 set smartcase		" smart case
-set title           " show title in console title bar
+" set title           " show title in console title bar
 " set ttyfast         " smoother changes
 " set ttyscroll=0        " turn off scrolling, didn't work well with PuTTY
 set modeline        " last lines in document sets vim mode
@@ -35,6 +35,10 @@ set expandtab
 nnoremap <leader><space> :noh<cr>	" ,<space> clears search highlight
 nnoremap <tab> %	" use tab to match bracket pairs
 vnoremap <tab> %	" use tab to match bracket pairs
+
+" use ; instead of : as the main key
+nnoremap ; :
+
 
 " misc keyboard
 
@@ -67,8 +71,6 @@ set laststatus=2
 :let g:buftabs_only_basename=1
 :let g:buftabs_active_highlight_group="Visual"
 :let g:buftabs_in_statusline=1
-noremap <f1> :bprev<CR> 
-noremap <f2> :bnext<CR> 
 
 noremap <C-<> :bprev<CR> 
 noremap <C->> :bnext<CR> 
@@ -86,12 +88,9 @@ set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../../tags
 
 inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 
-" colorscheme dwipal
 colorscheme desert256
 
-
 " autocmd FileType python set 
-
 
 " misc stuff / shortcutso
 " sort CSS properties
