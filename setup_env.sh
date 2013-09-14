@@ -7,7 +7,7 @@ echo "~/.bashrc exists, delete it before continuing"
 exit
 fi;
 
-return
+ln -s Toofan-Env ~/env
 
 echo "Removing existing files..."
 rm .bashrc
@@ -25,3 +25,5 @@ ln -s env/vim .vim
 
 echo "Linking pickv aliases (delete the file ~/.bash_overrides if you don't want them)"
 ln -s env/bash_overrides_pickv .bash_overrides
+
+echo "Your old .bash_profile is kept, do any local changes there"
