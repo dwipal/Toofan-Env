@@ -8,4 +8,3 @@ alias l='ls -CF'
 
 alias sscreen='screen -RR -T xterm-256color'
 
-alias dc='dotcloud'
